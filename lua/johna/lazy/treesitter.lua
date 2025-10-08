@@ -6,7 +6,7 @@ return {
  
     configs.setup({
         ensure_installed = {
-        "c", "lua", "vim", "vimdoc", "javascript", "html", "python", "typescript"
+        "c", "lua", "vim", "vimdoc", "javascript", "html", "python", "typescript", "php"
       },
       sync_install = false,
       highlight = { enable = true },
