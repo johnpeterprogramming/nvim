@@ -10,6 +10,8 @@ local builtin = require('telescope.builtin')
 
 which_key.add({
     { "2O", "O<Esc>O", desc = "Write two new lines above and go into insert mode." },
+    { "<C-d>", "<C-d>zz"},
+    { "<C-u>", "<C-u>zz"},
 
     { "<leader>pv", vim.cmd.Ex, desc = "Open VIM navigation" },
 
