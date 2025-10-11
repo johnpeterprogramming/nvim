@@ -34,8 +34,12 @@ which_key.add({
         })
     end, desc = "Find Files inside Git" },
 
+    { "<leader>pr", function()
+        builtin.live_grep()
+    end, desc = "Grep Regex" },
+
     { "<leader>ps", function()
-        builtin.grep_string({ search = vim.fn.input("Grep >") })
+        builtin.grep_string({ search = vim.fn.input("String >") })
     end, desc = "Grep String" },
 
     -- Undo tree - doesn't work rn
