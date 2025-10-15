@@ -48,7 +48,6 @@ which_key.add({
     { "<leader>e", function()
         vim.diagnostic.open_float(nil, { focusable = false })
     end, desc = "Show Diagnostic" },
-    
     -- Clear search highlighting on Esc
     { "<Esc>", "<cmd>nohlsearch<CR>", desc = "Clear search highlighting" }
-}) 
+})
