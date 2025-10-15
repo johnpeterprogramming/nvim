@@ -14,7 +14,7 @@ return {
 
         -- intelephense setup
         vim.lsp.config("intelephense", {
-            cmd = { "intelephense", "--stdio" }, -- npm install -g intelephense
+            cmd = { "intelephense", "--stdio" },
             filetypes = { "php" },
             root_markers = { "composer.json", ".git" },
             capabilities = capabilities, 
@@ -29,7 +29,8 @@ return {
                 vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
                 -- I copied these from gemini
                 vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, opts)
-                vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, opts)
+                vim.keymap.set('n', '<leader>gr', vim.lsp.buf.rename, opts)
+                -- vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, opts)
             end,
         })
 
